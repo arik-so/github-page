@@ -1,0 +1,891 @@
+<!DOCTYPE html> 
+	<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+	<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+	<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+	<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+	<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  	<head>
+	    <meta charset="utf-8">
+	    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="zEM1lmU55KXW/aS2UcUe87mpJCZB+XQ8GMMaQCEWI1iEEw42l4f17LIDFOshOW81K6DtKtAPEH7uI+onKxYoNw==" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"d4a97ca1fb","applicationID":"508316","transactionName":"dVhXEkFaCV5cSh5VQkJeWgpWRkpBUVdG","queueTime":0,"applicationTime":33,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQcFVldUGwYAXFJTAQ=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),s.on(m,function(){this.bstStart=Date.now()}),s.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(17)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;d>r;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||10>p)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;d>a;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(15),a=t(16);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[w[n]];return u&&u.push([v,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",w[n]=e,e in f||(f[e]=[])})}var m={},w={},v={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return v}function i(){return new r}var a="nr@context",s=t("gos"),c=t(15),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!g++){var t=y.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(w,function(e,n){t[e]||(t[e]=n)});var n="https"===m.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(15),f=window,u=f.document,d="addEventListener",l="attachEvent",p=f.XMLHttpRequest,h=p&&p.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:p,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var m=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-952.min.js"},v=p&&h&&h[d]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:m,features:{},xhrWrappable:v};u[d]?(u[d]("DOMContentLoaded",i,!1),f[d]("load",r,!1)):(u[l]("onreadystatechange",o),f[l]("onload",r)),s("mark",["firstbyte",a()],null,"api");var g=0},{}]},{},["loader",2,10,4,3]);</script>
+		  	<title>Cyber Blackmail And Ransomware: What You Need To Know - Law360</title>
+		  	<meta name="description" content="In a modern-day twist on the criminal traditions of extortion, computer hackers are engaging in extensive blackmail and ransom efforts. In this article, Kristofer Swanson and Louis Scharringhausen of Charles River Associates identify ways to reduce exposure and explain standard steps to make ransom payments via bitcoin or other cryptocurrency." />
+		  	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta property="og:title" content="Cyber Blackmail And Ransomware: What You Need To Know - Law360" />
+			<meta property="og:type" content="website" />
+				<meta property="og:url" content="http://www.law360.com/articles/805925/cyber-blackmail-and-ransomware-what-you-need-to-know" />
+			<meta property="og:image" content="https://www.law360.com/images/360.png" />
+		  	<!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		  	<meta name="apple-itunes-app" content="app-id=934560389, app-argument=law360://www.law360.com/articles/805925/cyber-blackmail-and-ransomware-what-you-need-to-know">
+		  	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	  	<!-- CSS : implied media="all" -->
+		<link rel="stylesheet" media="screen" href="http://static.law360news.com/assets/responsive-99c3b95f6e85341167e76eda1c88957e.css" data-turbolinks-track="true" />
+		
+		<script src="http://static.law360news.com/assets/responsive-81f52a713efb38bdf18087127f6e3d8a.js" data-turbolinks-track="true"></script>
+		<!--[if lt IE 9 ]>
+		<link rel="stylesheet" media="screen" href="http://static.law360news.com/assets/ie8-24b81ae95b34c4b24b6154ce15f7591a.css" />
+
+	    <script src="http://static.law360news.com/javascripts/respond/respond.min.js"></script>
+	    <link href="http://static.law360news.com/respond/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+	    <link href="/respond/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+	    <script src="http://static.law360news.com/javascripts/respond/respond.proxy.js"></script>
+
+		<![endif]-->
+	</head>
+  	<body id="show-page" >
+	    <div id="container">
+			<header id="Masthead">
+					<div id="ie8">
+	<div class="ie_nav">
+		<div class="ie-sections-link"><a href="#" title="Site menu" class="open-menu-options"><i class="fa fa-bars"></i></a></div>
+		<div class="ie-logo"><a href="/" style="padding:0;"><img src="http://static.law360news.com/images/Law360-mini.png" width="120" height="50" border="0" alt="Law360 - The Newswire for Business Lawyers" /></a>
+		</div>
+		<div class="ie-search-box">
+		  	<form action="/search" role="search" class="search-form">
+		    	<div class="input-group">
+		      		<input type="text" name="q" class="form-control" placeholder="News, cases, companies, firms" value="">
+		      		<span class="input-group-btn">
+		      			<input type="submit" value="GO" style="display:none;" />
+		        		<button id="btnGlobalSearchIE" class="btn btn-primary" title="Search button" type="button">Search</button>
+		      		</span>
+		    	</div>
+			</form>
+		</div>
+		<a href="/advanced_search" class="advsearch" title="Advanced Search link" data-no-turbolink>Advanced Search</a>
+		<div class="ie-utils" data-no-turbolink>
+				<ul class="dropdown pull-right">
+					<li class="drowdown">
+						<a href="#" class="user" data-toggle="dropdown">c752193@mvrht.com</a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+							<li><a href="/account">My Account</a></li>
+							<li><a href="/account/alerts">My Feeds and Alerts</a></li>
+							<li><a href="/account/briefcase">My Briefcase</a></li>
+							<li><a href="/newsletters">Newsletter Signup</a></li>
+							<li><a href="/faq">Help</a></li>
+							<li><a href="/account/logout" class="navSignOut">Log Out</a></li>
+						</ul>
+					</li>
+				</ul>
+		</div>
+	</div>
+</div>
+
+<nav class="navbar visible-xs" role="navigation">
+  	<div class="container-fluid mobile-navigation" data-no-turbolink>
+  		<div class="dropdown">
+  			<a href="#" class="mobile-menu-open" title="Site menu"><i class="fa fa-bars"></i></a>
+  		</div>
+  		<div class="search-icon-btn">
+  			<a href="#" class="open-mobile-search" title="Search button"><i class="fa fa-search"></i></a>
+  		</div>
+  		<div class="mobile-logo">
+  			<a href="/" style="padding:0;"><img src="http://static.law360news.com/images/Law360-mini.png" height="30" border="0" alt="Law360 - The Newswire for Business Lawyers" /></a>
+  		</div>
+			<a href="/account" class="mobile-acct-link"><i class="fa fa-user"></i> Account</a>
+		<span class="filler" style="height:25px">&nbsp;</a>
+  	</div>
+</nav>
+<div class="row">
+	<div class="mobile-search col-xs-12">
+		<form action="/search" class="navbar-form navbar-left" role="search">
+	    	<div class="input-group">
+	      		<input type="text" name="q" class="form-control" placeholder="News, cases, companies, firms" value="">
+	      		<span class="input-group-btn">
+	      			<input type="submit" value="GO" style="display:none;" />
+	        		<button id="btnGlobalSearchMobile" class="btn btn-primary" type="button" title="Search button"><i class="fa fa-search"></i></button>
+	      		</span>
+	    	</div>
+		</form>
+	</div>
+</div>
+<div id="navigation_new" class="visible-sm visible-md visible-lg">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div id="navbar-center" class="container-fluid">
+				<ul class="nav navbar-nav dropdown pull-right">
+					<li class="drowdown" data-no-turbolink>
+						<a href="#" class="user" data-toggle="dropdown">c752193@mvrht.com <i class="fa fa-user"></i></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+							<li><a href="/account">My Account</a></li>
+							<li><a href="/account/alerts">My Feeds and Alerts</a></li>
+							<li><a href="/account/briefcase">My Briefcase</a></li>
+							<li><a href="/newsletters">Newsletter Signup</a></li>
+							<li><a href="/faq">Help</a></li>
+							<li><a href="/account/logout" class="navSignOut">Log Out</a></li>
+						</ul>
+					</li>
+				</ul>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#" class="open-menu-options"><i class="fa fa-bars"></i></a></li>
+					<li class="hidden-xs"><a href="/" style="padding:0;"><img src="http://static.law360news.com/images/Law360-mini.png" width="120" height="50" border="0" alt="Law360 - The Newswire for Business Lawyers" /></a></li>
+				</ul>
+		      	<form action="/search" class="navbar-form navbar-left" role="search">
+			    	<div class="input-group">
+			      		<input type="text" name="q" class="form-control" placeholder="News, cases, companies, firms" value="">
+			      		<span class="input-group-btn">
+			      			<input type="submit" id="submitSearch" value="GO" style="display:none;" />
+			        		<button id="btnGlobalSearch" class="btn btn-primary" type="button" title="Search Button"><i class="fa fa-search"></i></button>
+			      		</span>
+			    	</div>
+		    	</form>
+		    	<span class="advsearch hidden-sm"><a href="/advanced_search" data-no-turbolink>Advanced Search</a> <a href="/Law360-Advanced-Search-Guide.pdf" title="Advanced Search link" target="_new"><i class="fa fa-info-circle"></i></a></span>
+			</div>
+		</div>
+	</nav>
+</div>
+<div id="menu-options">
+		<div style="text-align:right;padding:5px 10px;">
+			<a href="#" class="close-menu-options visible-sm visible-md visible-lg"><i class="fa fa-times-circle"></i> Close</a>
+		</div>
+		<ul class="list-group">
+			<li class="list-group-item"><a href="/advanced_search" data-no-turbolink>Adv. Search &amp; Platform Tools</a></li>
+			<li class="list-group-item"><a href="/sections" style="font-weight:bold;">Browse all sections <i class="fa fa-chevron-circle-right"></i></a></li>
+			<li class="list-group-item"><a href="/banking">Banking</a></li>
+			<li class="list-group-item"><a href="/bankruptcy">Bankruptcy</a></li>
+			<li class="list-group-item"><a href="/classaction">Class Action</a></li>
+			<li class="list-group-item"><a href="/competition">Competition</a></li>
+			<li class="list-group-item"><a href="/employment">Employment</a></li>
+			<li class="list-group-item"><a href="/energy">Energy</a></li>
+			<li class="list-group-item"><a href="/insurance">Insurance</a></li>
+			<li class="list-group-item"><a href="/ip">Intellectual Property</a></li>
+			<li class="list-group-item"><a href="/productliability">Product Liability</a></li>
+			<li class="list-group-item"><a href="/securities">Securities</a></li>
+			<li class="list-heading">Rankings</li>
+			<li class="list-group-item"><a href="/articles/723363/law360-mvp-awards-go-to-legal-aces-from-86-firms?site-menu=1">Law360's MVPs</a></li>
+			<li class="list-group-item"><a href="/articles/788024/the-glass-ceiling-report?site-menu=1">Glass Ceiling Report</a></li>
+			<li class="list-group-item"><a href="/rankings/global-20">Global 20</a></li>
+			<li class="list-group-item"><a href="/legalindustry/articles/777439?site-menu=1">Law360 400</a></li>
+			<li class="list-group-item"><a href="/articles/797823">Diversity Snapshot</a></li>
+			<li class="list-group-item"><a href="/rankings/practice-group-partner-rankings">Practice Group Partner Rankings</a></li>
+			<li class="list-group-item"><a href="/rankings/practice-groups-of-the-year">Practice Groups of the Year</a></li>
+			<li class="list-group-item"><a href="/rankings/pro-bono-firms-of-the-year">Pro Bono Firms of the Year</a></li>
+			<li class="list-group-item"><a href="/rankings/rising-stars">Rising Stars</a></li>
+			<li class="list-group-item"><a href="/rankings/trial-aces">Trial Aces</a></li>
+			<li class="list-heading">Site Menu</li>
+			<li class="list-group-item"><a href="/careers" title="Join the Law360 team">Join the Law360 team</a></li>
+			<li class="list-group-item"><a href="http://jobs.law360.com/" target="_blank">Search legal jobs</a></li>
+			<li class="list-group-item"><a href="/about" title="Learn more about Law360">Learn more about Law360</a></li>
+			<li class="list-group-item"><a href="/testimonials" title="Read testimonials">Read testimonials</a></li>
+			<li class="list-group-item"><a href="/about/contact" title="Contact Law360">Contact Law360</a></li>
+			<li class="list-group-item"><a href="/newsletters" title="Sign up for our newsletters">Sign up for our newsletters</a></li>
+			<li class="list-group-item"><a href="/site_index">Site Map</a></li>
+			<li class="list-group-item"><a href="/faq" title="Help: Frequently Asked Questions">Help</a></li>
+		</ul>
+</div>
+
+
+			</header>  
+			<div id="Page">
+				<div id="Main" class="clearfix">
+					<div id="Page_Messaging">
+</div>
+                    
+					
+								<div id="law360-banner" class="hidden-xs">
+									<div>Is Your Law Firm Making You Happy?</div>
+									<a href="https://docs.google.com/forms/d/1NPgSpek3ZupwxBCeyOfSkpGCp0grnX4OYlx4fSZ-hgA/viewform" class="btn btn-action">Click here to take our lawyer satisfaction survey.</a>
+								</div>
+                    
+					
+                    <div class="row">
+	<script>ArticleID = 805925</script>
+		<div class="col-sm-8 col-md-8">
+		<div id="article" class="hnews hentry">
+			<h1 class="entry-title">Cyber Blackmail And Ransomware: What You Need To Know</h1>	
+			<div id="article-body">
+				<p class="byline" style="width:100%">
+	<span class="share">
+		<label>Share us on:</label>
+		<a href="http://twitter.com/share?text=Cyber Blackmail And Ransomware: What You Need To Know&url=http://www.law360.com/banking/articles/805925" class="share-icons icon-twitter" title="Share us on Twitter" target="_blank"><i class="fa fa-twitter-square"></i></a>
+<a href="http://www.facebook.com/share.php?u=http://www.law360.com/banking/articles/805925" class="share-icons icon-facebook" title="Share us on Facebook" target="_blank"><i class="fa fa-facebook-square"></i></a>
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.law360.com/banking/articles/805925&summary=In+a+modern-day+twist+on+the+criminal+traditions+of+extortion%2C+computer+hackers+are+engaging+in+extensive+blackmail+and+ransom+efforts.+In+this+article%2C+Kristofer+Swanson+and+Louis+Scharringhausen+of+Charles+River+Associates+identify+ways+to+reduce+exposure+and+explain+standard+steps+to+make+ransom+payments+via+bitcoin+or+other+cryptocurrency.&title=Cyber+Blackmail+And+Ransomware%3A+What+You+Need+To+Know&source=Law360" class="share-icons icon-linkedin" title="Share us on LinkedIn" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+
+<a href="/articles/805925/share?section=banking" title="Email Article" class="share-icons"><i class="fa fa-envelope-square"></i></a>
+
+	</span>
+	<span>&nbsp;</span>
+</p>
+
+				Law360, New York (June 10, 2016, 11:48 AM ET) -- <div class="image-box-right" style="margin:5px 10px 10px 0;float:right;margin-left:1em">
+	<img class="img-responsive" img="" src="https://dlbjbjzgnk95t.cloudfront.net/0805000/805925/f5db37ec1ebb6b8e5e67474ab54a33b77e7403a0-swanson_kris_cra.jpg" style="border:1px solid black" width="120px" />
+	<div align="center" class="caption">
+		Kristofer Swanson</div>
+	<br />
+	<img class="img-responsive" img="" src="https://dlbjbjzgnk95t.cloudfront.net/0805000/805925/def95c72f81020b042b4b2cc9591b2c91cbeaaa4-scharringhausen_louis_cra.jpg" style="border:1px solid black" width="120" />
+	<div align="center" class="caption">
+		Louis Scharringhausen</div>
+</div>
+In a modern-day twist on the criminal traditions of extortion, computer hackers are engaging in extensive blackmail and ransom efforts. In a cyber blackmail situation, hackers obtain sensitive data from an organization and then threaten to publicly disclose it unless a payment is received. In a ransomware situation, hackers plant a malicious program on a corporate network that encrypts data and denies the organization access to its own files until a payment is received. A wide range of businesses, nonprofits and municipalities have fallen victim to these extortion schemes.[1]<br />
+<br />
+These attacks are particularly insidious as organizations must also deal with the possibility that regulated data (personally identifiable information, sensitive personal information, protected health information, payment card industry cardholder data) may have been taken from their networks, thereby triggering potential data breach notification obligations.<br />
+<br />
+Since both cyber blackmail and ransomware threats usually have a short decision window before either the data is disclosed or the decryption key is destroyed, it is important for organizations to develop legal, business, ethical and tactical perspectives on these risks and issues prior to an incident.<br />
+<br />
+This article defines and summarizes critical risk issues, identifies ways to reduce exposure and explains standard steps to make ransom payments via bitcoin or other cryptocurrency.<br />
+<br />
+<span style="font-size:16px;"><strong>Cyber Blackmail and Ransomware</strong></span><br />
+<br />
+In a typical cyber blackmail scenario, hackers obtain inside information from the victim and threaten to publicly disclose it if their financial demands are not met. The inside information could include trade secrets, insider financial data, or allegations of an embarrassing nature. The victim is notified and given just enough evidence to reasonably confirm that the hackers actually possess the information that they claim.<br />
+<br />
+In a typical ransomware scenario, a malicious software program encrypts files on a computer, network folders and/or backups (if they can be accessed from the infected computers), making the data unavailable for the victim&rsquo;s ongoing business and operational purposes. The hackers store a key to decrypt the files, which is not released until the ransom is paid. If the ransom is not paid within the initially specified time frame, the hackers may threaten to permanently destroy the decryption key as a way to increase pressure on the victim organization.<br />
+<br />
+In both cases, the hackers usually demand payment in a cryptocurrency (such as bitcoin), which allows for the transfer of funds in an untraceable and nonrecallable method.<br />
+<br />
+<span style="font-size:16px;"><strong>How Do These Attacks Unfold?</strong></span><br />
+<br />
+Though hackers have been known to leverage unpatched vulnerabilities in software and operating systems to gain initial access, attacks are more often crafted to exploit the target&rsquo;s own employees, as they are often the weakest link from a security perspective. In a method called &ldquo;spear phishing,&rdquo; for example, hackers use specific information about employees and/or the organization to craft emails that appear legitimate. However, these emails may contain unauthorized program files, macro-enabled <a href="/companies/microsoft-corporation">Microsoft Office</a> files, or download links that point toward obscured malicious software.<br />
+<br />
+Once the malicious software is downloaded and executed by the unsuspecting individual who clicks on the attachment or link, the installed software allows hackers to quickly identify additional targets inside the victim&rsquo;s network. Hackers may load malicious programs such as a key loggers (i.e., a program that records keystrokes to capture passwords), remote administration tools (&ldquo;RATs,&rdquo;&nbsp;which enable a hacker to remotely control a system), memory scrapers (designed to steal passwords stored in active memory), and others. All of these tools are installed with a single goal: to gather intelligence and gain control of systems on the network. Once inside, hackers search for mission-critical systems, such as e-mail servers, file servers, payroll, and backup systems.<br />
+<br />
+In a cyber blackmail scenario, hackers hone in on specific valuable information that an organization or its senior executives wouldn&rsquo;t want publicly disclosed. Once located, this information is copied from the network and uploaded to a concealed Internet location or file transfer protocol (FTP) site. The hackers then send an email with financial demands to the organization, and to provide added credibility to the threat, the email may contain information that only someone inside the organization can validate.<br />
+<br />
+In a typical ransomware scenario, software installed by a malicious link or attachment begins to encrypt files on targeted computers or systems. If online backups are located, they may also be encrypted or deleted to make it harder for an organization to recover encrypted data without paying the ransom.<br />
+Once the ransomware encryption process is complete, a splash screen appears, demanding payment and providing specific payment instructions, see Figure 1 for an example.<br />
+<br />
+<strong><em>Figure 1: CryptoWall 3.0 instructional splash screen.</em></strong><br />
+<br />
+<center>
+	<div style="text-align: left;">
+		<img alt="TITLE" src="https://dlbjbjzgnk95t.cloudfront.net/0805000/805925/rsz_1figure_1_1.png" /></div>
+</center>
+Source: <a href="https://sentinelone.com/blogs/anatomy-of-cryptowall-3-0-a-look-inside-ransomwares-tactics/">SentinelOne</a>.<br />
+<br />
+<br />
+<span style="font-size:16px;"><strong>How Can Organizations Help Prevent an Attack and/or Reduce Its Impact?</strong></span><br />
+<br />
+On the one hand, the most sobering aspect of long-loitering hackers is the amount of information they can amass. On the other hand, the longer the hackers are present in a network before launching a strike, the more opportunity the target has to detect and thwart the attack.<br />
+<br />
+Prevention and business continuity considerations published by the Federal Bureau of Investigation include:[2]<br />
+<br />
+<em><strong>Prevention Considerations</strong></em><br />
+<br />
+<ul>
+	<li>
+		Implement an awareness and training program. Because end users are targeted, employees and individuals should be made aware of the threat of ransomware and how it is delivered.</li>
+</ul>
+<br />
+<ul>
+	<li>
+		Patch operating systems, software, and firmware on devices, which may be made easier through a centralized patch management system.</li>
+</ul>
+<br />
+<ul>
+	<li>
+		Ensure anti-virus and anti-malware solutions are set to automatically update and that regular scans are conducted.</li>
+</ul>
+<br />
+<ul>
+	<li>
+		Manage the use of privileged accounts. Implement the principle of least privilege: no users should be assigned administrative access unless absolutely needed; those with a need for administrator accounts should only use them when necessary.</li>
+</ul>
+<br />
+<ul>
+	<li>
+		Configure access controls, including file, directory and network share permissions, with least privilege in mind. If a user only needs to read specific files, they should not have write access to those files, directories or shares.</li>
+</ul>
+<br />
+<ul>
+	<li>
+		Disable macro scripts from office files transmitted via email. Consider using Office Viewer software to open Microsoft Office files transmitted via email instead of full Office suite applications.</li>
+</ul>
+<br />
+<ul>
+	<li>
+		Implement software restriction policies or other controls to prevent programs from executing from common ransomware locations, such as temporary folders supporting popular Internet browsers or compression/decompression programs, including the AppData/LocalAppData folder.</li>
+</ul>
+<br />
+<em><strong>Business Continuity Considerations</strong></em><br />
+<br />
+<ul>
+	<li>
+		Back up data regularly, and regularly verify the integrity of those backups.</li>
+</ul>
+<br />
+<ul>
+	<li>
+		Secure your backups. Ensure backups are not connected to the computers and networks they are backing up. Examples might be securing backups in the cloud or physically storing offline. Some instances of ransomware have the capability to lock cloud-based backups when systems continuously back up in real time, also known as persistent synchronization. Backups are critical in ransomware; if you are infected, this may be the best way to recover your critical data.</li>
+</ul>
+<br />
+<em><strong>Other Considerations</strong></em><br />
+<br />
+<ul>
+	<li>
+		Implement application whitelisting; only allow systems to execute programs known and permitted by security policy.</li>
+</ul>
+<br />
+<ul>
+	<li>
+		Execute operating system environments or specific programs in a virtualized environment.</li>
+</ul>
+<br />
+<ul>
+	<li>
+		Categorize data based on organizational value, and implement physical/logical separation of networks and data for different organizational units.</li>
+</ul>
+<br />
+<span style="font-size:16px;"><strong>In the Aftermath of a Ransom Incident, What Steps Can Companies Take?</strong></span><br />
+<br />
+In the event of an attack, computer incident response teams (&ldquo;CIRT&rdquo;)[3] are typically activated to confirm the nature and extent of the threat. Due to the nontrivial possibility of downstream litigation and/or regulatory scrutiny, many companies structure their response efforts under the leadership of external legal counsel to benefit from the protections against compulsory production that privilege can provide.<br />
+<br />
+In a cyber blackmail event, the clues in the hackers&rsquo; notification may help determine where the sensitive information came from and what else could be compromised. If the data is only available from inside the corporate data stores, this strongly suggests a compromised IT security situation. The information leak could be from a disgruntled or recently departed employee, so a careful assessment is often conducted to determine if the threat originated from inside the organization. Once the information has been reasonably validated and the event is deemed to be appropriately material, clients typically notify their boards and external auditors, while the response strategy is being concurrently executed.<br />
+<br />
+In a ransomware attack, some or all of the organization&rsquo;s live data is transformed into an unusable state. The CIRT will assess what data is impacted, evaluate backup systems, and determine how current and complete the accessible data is. Any current backup activity will be suspended to prevent overwriting any existing full backups with corrupted information.<br />
+<br />
+In both cases, situational information will affect how the organization responds, and how deeply the board and general counsel may want to be involved. For example, if the majority of encrypted data can be recovered quickly through alternate means, the business benefits of paying ransom may quickly dissipate. In addition, there are important corporate and public policy considerations around the possibility that the attacking group may be indirectly or directly affiliated with terrorist organizations, foreign nation-states, and/or organized crime syndicates. And of course, even if initial payment demands are met, there is no guarantee that the hackers will not eventually release the stolen information, and/or resurface later to activate embedded malware and re-encrypt systems.<br />
+<br />
+<span style="font-size:16px;"><strong>Cryptocurrency Explained</strong></span><br />
+<br />
+Most payment demands are for amounts denominated in cryptocurrency, such as bitcoin, which allows for anonymous and permanent transactions. Cryptocurrencies are virtual currencies where the amount in any wallet&rsquo;s possession is shared with the entire cryptocurrency community in a shared ledger system called a blockchain. The shared ledger is designed to prevent the double spending of cryptocurrency. &ldquo;Miners&rdquo; (computers running algorithms) confirm blockchain ledger transactions.<br />
+<br />
+It is important to note that the <a href="/agencies/federal-bureau-of-investigation">FBI</a> does not support paying a ransom, but there is an understanding that when businesses are faced with an inability to function, executives will evaluate all options to protect their shareholders, employees and customers.[4]<br />
+<br />
+Should a business decide to make a payment in cryptocurrency, one must first acquire a &ldquo;wallet,&rdquo; which is effectively a string of letters and numbers used as a private encryption key. Most wallet programs are designed for mobile devices, computers or online access, although a limited number of hardware wallets are also available. Unless a web-based wallet is used, the block chain must be downloaded, a process that can take up to a week or more; however, using a desktop wallet instead of a web-based wallet is viewed to be more secure.<br />
+<br />
+<a href="http://www.bitgo.com">Bitgo</a>&nbsp;is an example of a web-based bitcoin wallet that offers links to funding options through <a href="http://www.coinbase.com">www.coinbase.com</a>:<br />
+<br />
+<em><strong>Figure 2: Bitgo.com wallet screen showing receive wallet addresses. The send screen is similar with fields for addresses to send bitcoin to.</strong></em><br />
+<br />
+<center>
+	<div style="text-align: left;">
+		<img alt="TITLE" src="https://dlbjbjzgnk95t.cloudfront.net/0805000/805925/rsz_figure_2_1.png" /></div>
+</center>
+<br />
+<br />
+Once a wallet is created, it is funded with cryptocurrency at an exchange. Just as one country&rsquo;s currency can be exchanged for another, government-issued monies (fiat currency) can be exchanged for virtual currency. Each wallet account has the ability to create a temporary &ldquo;receive&rdquo; address for the wallet. This is a unique address the exchange service needs to complete the transaction. Each transaction can take several days while the exchange waits for the checks or money orders to clear. There are not many bitcoin exchanges, so it may take up to a week to get a bank account set up for funds transfer.<br />
+<br />
+Cryptocurrency exchanges are neither synchronized nor highly liquid, so prices can fluctuate between and among them, depending upon the trading volume. For this reason, a company may want to consider spreading out a large purchase over several smaller transactions in an effort to keep the exchange price lower.<br />
+<br />
+Large orders may take time to fill as individual bitcoin owners must decide to sell at any given price.<br />
+<br />
+<span style="font-size:16px;"><strong>Summary</strong></span><br />
+<br />
+Ransom and blackmail extortion techniques are not new, but increasing innovations by hackers present new challenges for all businesses. Having a risk-based plan to deal with these attacks, including a robust CIRT, is critical. Preparations to reduce the likelihood or impact of an attack can reduce the ultimate exposure and costs to the organization, including investigative expenses, reputational harm, employee morale and downstream litigation. And from an ethical and values-based perspective, having discussions now with the board and C-suite about how to handle these events should they occur, may help facilitate a more efficient and effective response.<br />
+<br />
+&mdash;By Kristofer Swanson and Louis Scharringhausen, <a href="/companies/cra-international-inc">Charles River Associates</a><br />
+<br />
+<em><a href="http://www.crai.com/expert/kristofer-swanson">Kristofer Swanson</a>&nbsp;is a vice president at CRA in Chicago and leader of the forensic and cyber investigations practice. Principal <a href="http://www.crai.com/expert/louis-scharringhausen">Louis Scharringhausen</a> is a principal in the firm&#39;s Dallas office.<br />
+<br />
+The opinions expressed are those of the author(s) and do not necessarily reflect the views of the firm, its clients, or Portfolio Media Inc., or any of its or their respective affiliates. This article is for general information purposes and is not intended to be and should not be taken as legal advice.</em><br />
+<br />
+[1] Ben Dickson, &quot;How to Deal with the Rising Threat of Ransomware,&quot; TechCrunch, April 16, 2016, accessed April 17, 2016, http://techcrunch.com/2016/04/16/how-to-deal-with-the-rising-threat-of-ransomware/.<br />
+<br />
+[2] Ransomware, <a href="/agencies/u-s-department-of-justice">US Department of Justice</a>, Federal Bureau of Investigation, Cyber Division, https://www.fbi.gov/about-us/investigate/cyber/ransomware-brochure#disablemobile<br />
+<br />
+[3] Per the SANS Institute, the composition of a computer incident response team will depend on the needs and resources of each company, but may include representatives from inside the company &ndash; such as senior management, information security, information technology, legal, human resources, public relations -- and external resources, such as legal counsel and independent forensic investigators. (https://www.sans.org/reading-room/whitepapers/incident/computer-incident-response-team-641, accessed May 25, 2016).<br />
+<br />
+[4] See supra note 2.
+				<p id="endOfArticle"></p>
+				<div id="article-related-content">
+	<div class="col" style="margin-right: 20px" id="related_articles_container">
+		<h3>Related Articles</h3>
+		<div id="related_articles">
+	    </div>
+	</div>
+</div>
+<p class="visible-xs">
+	<a href="#" class="link-view-comments">View comments</a>
+</p>
+<div id="comments-section">
+	<div id='comments'></div>
+</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-4 col-md-3">
+		<div id="article_right">
+	<div id="article-utils">
+		<div class="util-content">
+			<ul>
+				<li class="li-briefcase">
+					<a href="#" title="Add to Briefcase" data-toggle="modal" data-target="#AddToBriefCaseModal"><i class="fa fa-suitcase"></i> Add to Briefcase</a>
+				</li>
+				<li class="printableVersion"><a href="/articles/805925/print?section=banking" onclick="window.open(this.href);return false;" title="Printable Version"><i class="fa fa-print"></i> Printable Version</a></li>
+				<li><a href="/about/rights_and_reprints?article_id=805925" title="Rights/Reprints"><i class="fa fa-copy"></i> Rights/Reprints</a></li>
+				<li><a href="/about/editorial_contacts" title="Editorial Contacts"><i class="fa fa-user"></i> Editorial Contacts</a></li>
+			</ul>
+			<h3>Related</h3>
+		    <h4>Sections</h4>
+            <ul>
+            	<li>
+            	        <a class="signup" href="/banking/newsletter" title="Sign up for the Banking daily newsletter."><i class="fa fa-envelope-o"></i></a>
+            	        <span class="trackable"><a href="/banking?article_sidebar=1" title="Banking">Banking</a></span>
+            	</li>
+            	<li>
+            	        <a class="signup" href="/consumerprotection/newsletter" title="Sign up for the Consumer Protection daily newsletter."><i class="fa fa-envelope-o"></i></a>
+            	        <span class="trackable"><a href="/consumerprotection?article_sidebar=1" title="Consumer Protection">Consumer Protection</a></span>
+            	</li>
+            	<li>
+            	        <a class="signup" href="/corporate/newsletter" title="Sign up for the Corporate daily newsletter."><i class="fa fa-envelope-o"></i></a>
+            	        <span class="trackable"><a href="/corporate?article_sidebar=1" title="Corporate">Corporate</a></span>
+            	</li>
+            	<li>
+            	        <a class="signup" href="/ip/newsletter" title="Sign up for the Intellectual Property daily newsletter."><i class="fa fa-envelope-o"></i></a>
+            	        <span class="trackable"><a href="/ip?article_sidebar=1" title="Intellectual Property">Intellectual Property</a></span>
+            	</li>
+            	<li>
+            	        <a class="signup" href="/privacy/newsletter" title="Sign up for the Privacy daily newsletter."><i class="fa fa-envelope-o"></i></a>
+            	        <span class="trackable"><a href="/privacy?article_sidebar=1" title="Privacy">Privacy</a></span>
+            	</li>
+            	<li>
+            	        <a class="signup" href="/technology/newsletter" title="Sign up for the Technology daily newsletter."><i class="fa fa-envelope-o"></i></a>
+            	        <span class="trackable"><a href="/technology?article_sidebar=1" title="Technology">Technology</a></span>
+            	</li>
+            </ul>
+
+
+
+
+				<h4>Companies</h4>
+				<ul>
+						<li><a class="track track-company" href="/tracked_entities/create?entity_type=companies&entity_id=4c52dd4bcc956f21c4000497&entity_name=CRA+International+Inc.&entity_url_name=cra-international-inc &entity_model=Organization" title="Receive daily reports every time a new story is published or case is filed involving this company."><i class="fa fa-envelope-o"></i></a> <span class="trackable"><a href="/companies/cra-international-inc?article_related_content=1">CRA International Inc.</a></span></li>
+						<li><a class="track track-company" href="/tracked_entities/create?entity_type=companies&entity_id=4c52dd4fcc956f21c4000ad9&entity_name=Microsoft+Corporation&entity_url_name=microsoft-corporation &entity_model=Organization" title="Receive daily reports every time a new story is published or case is filed involving this company."><i class="fa fa-envelope-o"></i></a> <span class="trackable"><a href="/companies/microsoft-corporation?article_related_content=1">Microsoft Corporation</a></span></li>
+				</ul>
+
+				<h4>Government Agencies</h4>
+				<ul>
+						<li><a class="track" href="/tracked_entities/create?entity_type=agencies&entity_id=4f563bb94d4de527a20006e9&entity_name=Federal+Bureau+of+Investigation&entity_url_name=federal-bureau-of-investigation &entity_model=Organization" title="Receive daily reports every time a new story is published or case is filed involving this government agency."><i class="fa fa-envelope-o"></i></a> <span class="trackable"><a href="/agencies/federal-bureau-of-investigation?article_related_content=1">Federal Bureau of Investigation</a></span></li>
+						<li><a class="track" href="/tracked_entities/create?entity_type=agencies&entity_id=4c52dd62cc956f21c400281a&entity_name=U.S.+Department+of+Justice&entity_url_name=u-s-department-of-justice &entity_model=Organization" title="Receive daily reports every time a new story is published or case is filed involving this government agency."><i class="fa fa-envelope-o"></i></a> <span class="trackable"><a href="/agencies/u-s-department-of-justice?article_related_content=1">U.S. Department of Justice</a></span></li>
+				</ul>
+
+		</div>
+	</div>
+
+		<div class="popular_articles">
+			<h4>Most Popular</h4>
+			<ul>
+				<li class="hnews hentry">
+					<span class="index">1</span>
+					<a href="/articles/809166?sidebar=true" class="url entry-title">4 Bad Habits Firm Leaders Need To Break Now</a>
+				</li>
+				<li class="hnews hentry">
+					<span class="index">2</span>
+					<a href="/articles/800575?sidebar=true" class="url entry-title">RFP Lessons: A General Counsel's List Of Law Firm Mistakes</a>
+				</li>
+				<li class="hnews hentry">
+					<span class="index">3</span>
+					<a href="/articles/809156?sidebar=true" class="url entry-title">How To Train The Next Generation Of Litigators</a>
+				</li>
+				<li class="hnews hentry">
+					<span class="index">4</span>
+					<a href="/articles/813260?sidebar=true" class="url entry-title">3rd Circ. Affirms Suspension Of Led Zeppelin Case Atty</a>
+				</li>
+				<li class="hnews hentry">
+					<span class="index">5</span>
+					<a href="/articles/813319?sidebar=true" class="url entry-title">Norton Rose, Kilpatrick, 3 Other Firms Raise Associate Pay</a>
+				</li>
+			</ul>
+		</div>
+
+
+</div>
+
+	</div>
+<script>Receipt = true</script>
+<noscript>
+<img src="/articles/805925/receipt" height="1" width="1" />
+</noscript>
+
+	
+</div>
+
+				</div>
+			</div>
+			<footer id="Footer">
+				<p class="copyright">&copy; 2016, Portfolio Media, Inc. <a href="/about">About</a> | <a href="/about/contact">Contact Us</a> | <a href="http://jobs.law360.com/">Legal Jobs</a> | <a href="/careers">Careers at Law360</a> | <a href="/terms">Terms</a> | <a href="/privacy_policy">Privacy Policy</a> | <a href="http://updates.law360.com/" target="_new">Law360 Updates</a> | <a href="/faq">Help</a><span class="sitelinks">
+	<label><strong>Beta Tools:</strong> </label> <a title="Track docs" href="/advanced_search/dockets">Track docs</a> | <a title="Track attorneys" href="/advanced_search/attorneys">Track attorneys</a> | <a title="Track judges" href="/advanced_search/judges">Track judges</a>
+</span></p>
+<p style="text-align:center;padding-bottom:5px;"><a href="/site_index">Visit Our Site Map</a></p>
+
+			</footer>
+		</div>
+				<div class="modal" id="AddToBriefCaseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        		<h4 class="modal-title" id="myModalLabel"><i class="fa fa-suitcase"></i> Add this article to my briefcase</h4>
+      		</div>
+      		<div class="modal-body">
+        		<h3>Cyber Blackmail And Ransomware: What You Need To Know</h3>
+        		<p><strong>Create new folder:</strong></p>
+        		<input type="text" name="briefcase_folder_name" class="form-control col-sm-12" placeholder="Name required" />
+        		<br style="clear:both;" />
+        		<div id="FolderPanel">
+        			<p style="margin:8px 0;">OR</p>
+					<p><strong>Select a folder to add to:</strong></p>
+					<div id="FolderList" style="max-height:150px;overflow:auto;"><img src="/images/ajax-loader.gif" border="0" /></div>
+				</div>
+      		</div>
+      		<div class="modal-footer">
+      			<a href="/briefcase_folder_items/create?briefcase_folder_item[article_id]=805925&briefcase_folder_item[name]=Cyber+Blackmail+And+Ransomware%3A+What+You+Need+To+Know" class="btn btn-default btnAddToBriefcase" title="Cyber Blackmail And Ransomware: What You Need To Know" rel="805925">Add Now</a>
+      			<button type="button" class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+      		</div>
+    	</div>
+  	</div>
+</div>
+
+
+
+
+		<!-- Available regardless of user logged in or not -->
+			<style>
+	.validation-message {margin: 8px 0;color:#ffffff;}
+	.all-newsletters {display: none;}
+	a.show-more {color: #FFF;font-size:14px; display: block; margin-bottom: 15px;}
+</style>
+<div class="modal" id="NewsletterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        		<h4 class="modal-title" id="myModalLabel">Sign up for our free Banking newsletter</h4>
+      		</div>
+      		<div class="modal-body">
+        		<div id="bluebox">
+					<div class="msgcontainer">
+						<div id="PersonalizeFormValidation"><p></p></div>
+						<div id="PersonalizeFormSuccess"><p></p></div>
+						<div id="ValidationMessage"><h3>You must correct or enter the following before you can sign up:</h3><p></p></div>
+					</div>
+					<form id="subscribe_newsletter_form" method="post">
+							<input type="hidden" />
+							<div class="form-group">
+								<label>Please provide a professional email:</label>
+								<input class="form-control email" id="user_email" name="email" value="c752193@mvrht.com" size="30" type="email" alt="Email" />
+								<input type="hidden" name="section[]" value="banking"/>
+							</div>
+							<a href="#" class="show-more"><i class="fa fa-plus-square"></i> Select more newsletters to receive for free</a>
+							<div class="all-newsletters">
+										<div style="float:left;width:50%;">
+											<div class="checkbox">
+												<label for="newsletter_aerospace" >
+													<input id="newsletter_aerospace" name="section[]" type="checkbox" value="aerospace" title="Aerospace &amp; Defense" /> Aerospace &amp; Defense
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_appellate" >
+													<input id="newsletter_appellate" name="section[]" type="checkbox" value="appellate" title="Appellate" /> Appellate
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_assetmanagement" >
+													<input id="newsletter_assetmanagement" name="section[]" type="checkbox" value="assetmanagement" title="Asset Management" /> Asset Management
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_automotive" >
+													<input id="newsletter_automotive" name="section[]" type="checkbox" value="automotive" title="Automotive" /> Automotive
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_banking" >
+													<input id="newsletter_banking" name="section[]" type="checkbox" value="banking" title="Banking" checked="checked" disabled="true"/> Banking
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_bankruptcy" >
+													<input id="newsletter_bankruptcy" name="section[]" type="checkbox" value="bankruptcy" title="Bankruptcy" /> Bankruptcy
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_california" >
+													<input id="newsletter_california" name="section[]" type="checkbox" value="california" title="California" /> California
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_capitalmarkets" >
+													<input id="newsletter_capitalmarkets" name="section[]" type="checkbox" value="capitalmarkets" title="Capital Markets" /> Capital Markets
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_classaction" >
+													<input id="newsletter_classaction" name="section[]" type="checkbox" value="classaction" title="Class Action" /> Class Action
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_commercialcontracts" >
+													<input id="newsletter_commercialcontracts" name="section[]" type="checkbox" value="commercialcontracts" title="Commercial Contracts" /> Commercial Contracts
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_competition" >
+													<input id="newsletter_competition" name="section[]" type="checkbox" value="competition" title="Competition" /> Competition
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_consumerprotection" >
+													<input id="newsletter_consumerprotection" name="section[]" type="checkbox" value="consumerprotection" title="Consumer Protection" /> Consumer Protection
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_corporate" >
+													<input id="newsletter_corporate" name="section[]" type="checkbox" value="corporate" title="Corporate" /> Corporate
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_employment" >
+													<input id="newsletter_employment" name="section[]" type="checkbox" value="employment" title="Employment" /> Employment
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_energy" >
+													<input id="newsletter_energy" name="section[]" type="checkbox" value="energy" title="Energy" /> Energy
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_environmental" >
+													<input id="newsletter_environmental" name="section[]" type="checkbox" value="environmental" title="Environmental" /> Environmental
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_florida" >
+													<input id="newsletter_florida" name="section[]" type="checkbox" value="florida" title="Florida" /> Florida
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_foodbeverage" >
+													<input id="newsletter_foodbeverage" name="section[]" type="checkbox" value="foodbeverage" title="Food &amp; Beverage" /> Food &amp; Beverage
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_governmentcontracts" >
+													<input id="newsletter_governmentcontracts" name="section[]" type="checkbox" value="governmentcontracts" title="Government Contracts" /> Government Contracts
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_health" >
+													<input id="newsletter_health" name="section[]" type="checkbox" value="health" title="Health" /> Health
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_hospitality" >
+													<input id="newsletter_hospitality" name="section[]" type="checkbox" value="hospitality" title="Hospitality" /> Hospitality
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_immigration" >
+													<input id="newsletter_immigration" name="section[]" type="checkbox" value="immigration" title="Immigration" /> Immigration
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_insurance" >
+													<input id="newsletter_insurance" name="section[]" type="checkbox" value="insurance" title="Insurance" /> Insurance
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_ip" >
+													<input id="newsletter_ip" name="section[]" type="checkbox" value="ip" title="Intellectual Property" /> Intellectual Property
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_internationalarbitration" >
+													<input id="newsletter_internationalarbitration" name="section[]" type="checkbox" value="internationalarbitration" title="International Arbitration" /> International Arbitration
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_internationaltrade" >
+													<input id="newsletter_internationaltrade" name="section[]" type="checkbox" value="internationaltrade" title="International Trade" /> International Trade
+												</label>
+											</div>
+										</div>
+										<div style="float:right;width:50%;">
+											<div class="checkbox">
+												<label for="newsletter_in-depth" >
+													<input id="newsletter_in-depth" name="section[]" type="checkbox" value="in-depth" title="Law360 In-Depth" /> Law360 In-Depth
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_legalethics" >
+													<input id="newsletter_legalethics" name="section[]" type="checkbox" value="legalethics" title="Legal Ethics" /> Legal Ethics
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_lifesciences" >
+													<input id="newsletter_lifesciences" name="section[]" type="checkbox" value="lifesciences" title="Life Sciences" /> Life Sciences
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_media" >
+													<input id="newsletter_media" name="section[]" type="checkbox" value="media" title="Media &amp; Entertainment" /> Media &amp; Entertainment
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_mergersacquisitions" >
+													<input id="newsletter_mergersacquisitions" name="section[]" type="checkbox" value="mergersacquisitions" title="Mergers &amp; Acquisitions" /> Mergers &amp; Acquisitions
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_nativeamerican" >
+													<input id="newsletter_nativeamerican" name="section[]" type="checkbox" value="nativeamerican" title="Native American" /> Native American
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_newjersey" >
+													<input id="newsletter_newjersey" name="section[]" type="checkbox" value="newjersey" title="New Jersey" /> New Jersey
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_newyork" >
+													<input id="newsletter_newyork" name="section[]" type="checkbox" value="newyork" title="New York" /> New York
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_pennsylvania" >
+													<input id="newsletter_pennsylvania" name="section[]" type="checkbox" value="pennsylvania" title="Pennsylvania" /> Pennsylvania
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_privacy" >
+													<input id="newsletter_privacy" name="section[]" type="checkbox" value="privacy" title="Privacy" /> Privacy
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_privateequity" >
+													<input id="newsletter_privateequity" name="section[]" type="checkbox" value="privateequity" title="Private Equity" /> Private Equity
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_product_liability" >
+													<input id="newsletter_product_liability" name="section[]" type="checkbox" value="product_liability" title="Product Liability" /> Product Liability
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_projectfinance" >
+													<input id="newsletter_projectfinance" name="section[]" type="checkbox" value="projectfinance" title="Project Finance" /> Project Finance
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_publicpolicy" >
+													<input id="newsletter_publicpolicy" name="section[]" type="checkbox" value="publicpolicy" title="Public Policy" /> Public Policy
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_realestate" >
+													<input id="newsletter_realestate" name="section[]" type="checkbox" value="realestate" title="Real Estate" /> Real Estate
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_retail" >
+													<input id="newsletter_retail" name="section[]" type="checkbox" value="retail" title="Retail &amp; E-Commerce" /> Retail &amp; E-Commerce
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_securities" >
+													<input id="newsletter_securities" name="section[]" type="checkbox" value="securities" title="Securities" /> Securities
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_sports" >
+													<input id="newsletter_sports" name="section[]" type="checkbox" value="sports" title="Sports" /> Sports
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_tax" >
+													<input id="newsletter_tax" name="section[]" type="checkbox" value="tax" title="Tax" /> Tax
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_technology" >
+													<input id="newsletter_technology" name="section[]" type="checkbox" value="technology" title="Technology" /> Technology
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_telecom" >
+													<input id="newsletter_telecom" name="section[]" type="checkbox" value="telecom" title="Telecommunications" /> Telecommunications
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_texas" >
+													<input id="newsletter_texas" name="section[]" type="checkbox" value="texas" title="Texas" /> Texas
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_transportation" >
+													<input id="newsletter_transportation" name="section[]" type="checkbox" value="transportation" title="Transportation" /> Transportation
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_trials" >
+													<input id="newsletter_trials" name="section[]" type="checkbox" value="trials" title="Trials" /> Trials
+												</label>
+											</div>
+											<div class="checkbox">
+												<label for="newsletter_whitecollar" >
+													<input id="newsletter_whitecollar" name="section[]" type="checkbox" value="whitecollar" title="White Collar" /> White Collar
+												</label>
+											</div>
+										</div>
+							</div>
+							<div style="width:100%;clear:both;text-align:right;">
+								<button class="btn" data-dismiss="modal" aria-hidden="true">No Thanks</button>
+								<a href="#" rel="/newsletters/signup" id="signUpNow" class="btn btn-danger submit disabled">Sign up now</a>
+							</div>
+							<input type="hidden" id="event_action" value="Section Newsletter Signup Modal" />
+			    	</form>
+					<div class="page-messaging">
+						<div id="Success">
+							<h3>Thank You!</h3>
+							<p></p>
+						</div>
+					</div>
+				</div>
+      		</div>
+    	</div>
+  	</div>
+</div>
+
+		<!-- Javascript at the bottom for fast page loading -->
+			
+			<script src="http://static.law360news.com/assets/www/briefcase_add-17b65159b294ebbd39bd9be87822f8c4.js"></script>
+			<script src="http://static.law360news.com/assets/www/articles_subscriber-fd55f82027cb01d02c1ea42225cf4c37.js"></script>
+		<script type="text/javascript">
+	//GA Universal
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-3460073-1', 'law360.com');
+	ga('send', 'pageview');
+	ga('set', '&uid', "skwB9K3EGyIph6Rh1DCbmG+JNqhLjGx+opcE5r6ifMg="); 
+
+			ga('set', 'dimension2', 'skwB9K3EGyIph6Rh1DCbmG+JNqhLjGx+opcE5r6ifMg=');
+			ga('set', 'dimension1', 'Free-Trial-Free-Trial');
+			ga('set', 'dimension8', '447809');
+			ga('set', 'dimension6', 'Login');
+			ga('set', 'dimension7', 'Unpaid');
+			ga('set', 'dimension9', 'Free-Trial');
+			ga('set', 'dimension3', 'Unspecified');
+			ga('set', 'dimension4', 'Cyber-Blackmail-And-Ransomware:-What-You-Need-To-Know');
+			ga('set', 'dimension10', '805925');
+			ga('set', 'dimension5', 'Trial');
+
+			ga('send', 'event', 'Subscriptions', 'Email Verified' );
+			ga('send', 'event', 'Sections', 'Unspecified' , 'Cyber Blackmail And Ransomware: What You Need To Know');
+			ga('send', 'event', 'Sections', 'Expert Analysis' , 'Cyber Blackmail And Ransomware: What You Need To Know');
+			ga('send', 'event', 'Article Active Trial Views', 'Cyber Blackmail And Ransomware: What You Need To Know' );
+
+	
+	var callScrollDepth = function(){
+		jQuery.scrollDepth({
+			userTiming: false,
+			pixelDepth: false
+		});
+	};
+	var resetScrollDepth = function(){
+		jQuery.scrollDepth.reset();
+	};
+	$(document).ready(callScrollDepth);
+	$(document).on('page:load', resetScrollDepth);
+</script>
+
+
+
+  	</body>
+</html>
